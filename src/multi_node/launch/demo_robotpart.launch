@@ -1,0 +1,9 @@
+<launch>
+
+    <!-- 设置参数 -->
+    <param name="robot_description" textfile="/home/tony/ROS/ROS_learning/ws_rl/src/multi_node/urdf/demo_robotpart.urdf" />
+
+    <!-- 启动 rviz -->
+    <node pkg="rviz" type="rviz" name="rviz" args="-d /home/tony/ROS/ROS_learning/ws_rl/src/multi_node/config/robotpart.rviz" />
+
+</launch>

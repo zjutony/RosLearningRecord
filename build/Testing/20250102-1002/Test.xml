@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20250102-1002-Experimental"
+	Name="tony-LEGION-REN7000K-26IRB"
+	Generator="ctest-3.16.3"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="9.4.0"
+	OSName="Linux"
+	Hostname="tony-LEGION-REN7000K-26IRB"
+	OSRelease="5.15.0-125-generic"
+	OSVersion="#135~20.04.1-Ubuntu SMP Mon Oct 7 13:56:22 UTC 2024"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="191"
+	ProcessorCacheSize="20480"
+	NumberOfLogicalCPU="16"
+	NumberOfPhysicalCPU="10"
+	TotalVirtualMemory="2047"
+	TotalPhysicalMemory="15702"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="2500"
+	>
+	<Testing>
+		<StartDateTime>Jan 02 18:02 CST</StartDateTime>
+		<StartTestTime>1735812121</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jan 02 18:02 CST</EndDateTime>
+		<EndTestTime>1735812121</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

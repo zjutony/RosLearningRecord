@@ -1,0 +1,29 @@
+<launch>
+    <!-- 将 Urdf 文件的内容加载到参数服务器 -->
+    <param name="robot_description" command="$(find xacro)/xacro $(find keyboard_mycar)/urdf/xacro/gazebo_mycar_cam_lidar.xacro" />
+    <!-- 启动 gazebo -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch" >
+        <arg name="world_name" value="/home/tony/ROS/ROS_learning/ws_rl/src/keyboard_mycar/worlds/world3.world" /> 
+    </include>    
+    <!-- 在 gazebo 中显示机器人模型 -->
+    <!-- <node pkg="gazebo_ros" type="spawn_model" name="model" args="-urdf -model mycar -param robot_description"  /> -->
+
+    <!-- 启动 rviz -->
+    <!-- <node pkg="rviz" type="rviz" name="rviz" /> -->
+
+    <!-- 关节以及机器人状态发布节点 -->
+    <!-- <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" > -->
+        <!-- <param name="publish_frequency" value="10.0"/> -->
+    <!-- </node>     -->
+    <!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" >
+        <param name="publish_frequency" value="10.0"/>
+    </node>     -->
+    <!-- <node pkg="tf" type="static_transform_publisher" name="odom_to_base_footprint" args="0.0 0.0 0.0 0 0 0.0 /odom /base_footprint 10000"/> -->
+    <!-- <node pkg="tf" type="static_transform_publisher" name="odom_to_base_footprint" args="0.0 0.0 0.0 0 0 0.0 /odom /base_footprint 10000"/> -->
+
+
+    <!-- 调用键盘控制机器人运动 -->
+    <!-- <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="keyboard_controller"> -->
+    <!-- <node pkg="keyboard_mycar" type="keyboard_pub.py" name="keyboard_listener" />
+    <node pkg="keyboard_mycar" type="mycar_command.py" name="keyboard_controller" /> -->
+</launch>

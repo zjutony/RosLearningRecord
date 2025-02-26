@@ -1,0 +1,10 @@
+controller_list:
+  - name: slide_joint_position_controller
+    type: position_controllers/JointPositionController
+    joints:
+      - slide_joint
+
+  - name: pole2box_position_controller
+    type: position_controllers/JointPositionController
+    joints:
+      - pole2box

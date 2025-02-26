@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<robot name="inverted_pendulum">
+  <!-- 小车 Link -->
+  <link name="base_link">
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.005" ixy="0.0" ixz="0.0" iyy="0.005" iyz="0.0" izz="0.005"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.6 0.3 0.1"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.6 0.3 0.1"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- 摆杆 Link -->
+  <link name="pendulum_link">
+    <inertial>
+      <mass value="0.2"/>
+      <inertia ixx="0.002" ixy="0.0" ixz="0.0" iyy="0.00067" iyz="0.0" izz="0.002"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <cylinder radius="0.02" length="0.6"/>
+      </geometry>
+      <material name="green">
+        <color rgba="0 1 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder radius="0.02" length="0.6"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <!-- 小车的滑动关节 -->
+  <joint name="cart_joint" type="prismatic">
+    <parent link="base_link"/>
+    <child link="cart_link"/>
+    <origin xyz="0 0 0.05" rpy="0 0 0"/>
+    <axis xyz="1 0 0"/> <!-- 小车沿x轴滑动 -->
+    <limit lower="-1.0" upper="1.0" effort="10" velocity="1"/> <!-- 限制小车的运动范围 -->
+  </joint>
+
+  <!-- 小车的实际链接 -->
+  <link name="cart_link">
+    <visual>
+      <geometry>
+        <box size="0.6 0.3 0.1"/>
+      </geometry>
+      <material name="blue">
+        <color rgba="0 0 1 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.6 0.3 0.1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.5"/>
+      <inertia ixx="0.005" ixy="0.0" ixz="0.0" iyy="0.005" iyz="0.0" izz="0.005"/>
+    </inertial>
+  </link>
+
+  <!-- 小车和摆杆之间的关节 -->
+  <joint name="base_to_pendulum" type="revolute">
+    <parent link="cart_link"/>
+    <child link="pendulum_link"/>
+    <origin xyz="0 0 0.05" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+    <limit lower="-2" upper="2" effort="100" velocity="1"/>
+    <dynamics damping="0.0" friction="0.1"/>
+  </joint>
+</robot>

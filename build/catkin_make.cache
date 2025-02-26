@@ -1,0 +1,2 @@
+keyboard_mycar:multi_node:topic_node
+-DCATKIN_DEVEL_PREFIX=/home/tony/ROS/ROS_learning/ws_rl/devel -DCMAKE_INSTALL_PREFIX=/home/tony/ROS/ROS_learning/ws_rl/install -G Unix Makefiles

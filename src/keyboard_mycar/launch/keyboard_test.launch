@@ -1,0 +1,5 @@
+<launch>
+    <!-- 调用键盘控制机器人运动 -->
+    <node pkg="keyboard_mycar" type="keyboard_pub.py" name="keyboard_listener" />
+    <node pkg="keyboard_mycar" type="mycar_command.py" name="keyboard_controller" />
+</launch>

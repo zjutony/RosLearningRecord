@@ -1,0 +1,7 @@
+{
+    "cmake.sourceDirectory": "/home/tony/ROS/ROS_learning/ws_rl/src/multi_node",
+    "python.autoComplete.extraPaths": [
+        "/opt/ros/noetic/lib/python3/dist-packages",
+        "/xxx/yyy工作空间/devel/lib/python3/dist-packages"
+    ]
+}
