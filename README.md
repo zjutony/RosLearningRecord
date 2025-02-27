@@ -10,7 +10,7 @@ Below are some videos showing the robot, simulation environment, and navigation:
   Your browser does not support the video tag.
 </video>
 
-![image](demo_video/env.png)
+![image](src/keyboard_mycar/env.png)
 
 
 
