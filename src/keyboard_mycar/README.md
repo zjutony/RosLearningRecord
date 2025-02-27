@@ -63,7 +63,7 @@ URDF 文件主要有以下组件：
 
 URDF 文件具体细节可以查阅文件夹 `src/urdf`。
 
-![URDF 机器人](image_url)
+![URDF 机器人](car.png)
 
 #### 用 xacro 配置仿真机器人
 
@@ -77,7 +77,7 @@ xacro 文件细节可以查阅文件夹 `src/urdf/xacro`。
 
 在 Gazebo 仿真器中搭建一个可以让两轮差速机器人进行自我探索的环境。Gazebo 中有许多内置物理模型和场景，可以自主插入并设计一个自己的环境，环境构建如下：
 
-![仿真环境](image_url)
+![仿真环境](env.PNG)
 
 **补充**：为了让机器人能够进入 Gazebo 仿真环境中，需要在 URDF 文件或 xacro 文件中配置 `<gazebo>` 属性。
 
@@ -137,7 +137,7 @@ SLAM 是机器人自主导航的基础，广泛应用于自动驾驶、无人机
    - **滤波方法**：
      - 使用卡尔曼滤波（EKF-SLAM）或粒子滤波（FastSLAM）进行状态估计。
      - 适合实时性要求高的场景，但精度可能较低。
-     - 滤波方法相关复习可以查阅：[Learning Note——滤波算法（信号处理）](link)
+     - 滤波方法相关复习可以查阅：[Learning Note——滤波算法（信号处理）](https://vh8pq0y4c6.feishu.cn/docx/HwaeduJNCopgEwxwkUqcq2Linte)
    - **优化方法**：
      - 使用图优化（Graph-SLAM）或因子图优化（Factor Graph Optimization）进行状态估计。
      - 适合高精度场景，但计算复杂度较高。
@@ -267,7 +267,7 @@ AMCL（Adaptive Monte Carlo Localization）是用于 2D 移动机器人的概率
 
 区别于 `gmapping` 中使用里程计 `odom` 定位的方法，添加 `amcl` 的方法可以更加精准的完成在已知地图上的机器人定位任务。
 
-![AMCL 定位](image_url)
+![AMCL 定位](AMCL.png)
 
 相当于多了一层位置的校验，可以定位更加准确。
 
@@ -282,7 +282,7 @@ AMCL（Adaptive Monte Carlo Localization）是用于 2D 移动机器人的概率
 
 本项目中使用了 ROS 自带的 `move_base` 功能包，它自带了全局路径规划（默认使用 `navfn`，包含了 Dijkstra 算法和 A* 算法）和局部路径规划（滑动窗口 DWA 算法），由此只需要配置一下地图和机器人的相关参数即可实现路径规划。
 
-有关机器人平面路径规划的相关笔记参考：[Learning Note——Path Planning](link)
+有关机器人平面路径规划的相关笔记参考：[Learning Note——Path Planning](https://vh8pq0y4c6.feishu.cn/docx/Fo1VdSDwdoZPWYxGGo2cxPPBnNf)
 
 ---
 
