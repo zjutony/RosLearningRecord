@@ -10,7 +10,7 @@ Below are some videos showing the robot, simulation environment, and navigation:
   Your browser does not support the video tag.
 </video>
 
-[![video](https://www.youtube.com/watch?v=5pl_yiZUH5U)
+[![slam and nav]](https://www.youtube.com/watch?v=5pl_yiZUH5U)
 
 https://github.com/user-attachments/assets/e58492d6-1ee1-4f98-98ea-6bd41c306209
 
