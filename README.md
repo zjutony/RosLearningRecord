@@ -12,6 +12,7 @@ Below are some videos showing the robot, simulation environment, and navigation:
 
 ![image](src/keyboard_mycar/env.png)
 
+![video](demo_video/env.mp4)
 
 
 
