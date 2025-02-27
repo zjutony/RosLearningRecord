@@ -5,14 +5,15 @@ Some details are in the package **"keyboard_mycar"**, and you can find some demo
 
 Below are some videos showing the robot, simulation environment, and navigation:  
 
-<video width="640" height="360" controls>
-  <source src="https://raw.githubusercontent.com/zjutony/RosLearningRecord/main/demo_video/mycar.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
-
-[![slam and nav]](https://www.youtube.com/watch?v=5pl_yiZUH5U)
+## Robot Model
 
 https://github.com/user-attachments/assets/e58492d6-1ee1-4f98-98ea-6bd41c306209
 
+## Environment Model
+
 https://github.com/user-attachments/assets/59ec08d5-78d8-43dc-9717-e51b9854d533
+
+## Robot slam and navigate
+
+https://github.com/user-attachments/assets/f055a53b-e873-4fdd-a5bd-4d35b0c33b43
 
