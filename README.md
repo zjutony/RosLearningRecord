@@ -5,7 +5,7 @@ Some details are in the package **"keyboard_mycar"**, and you can find some demo
 
 Below are some videos showing the robot, simulation environment, and navigation:  
 <video width="640" height="360" controls>
-  <source src="https://github.com/user-attachments/assets/4f665bca-6057-4d96-b928-da782a9b7255" type="video/mp4">
+  <source src="https://raw.githubusercontent.com/zjutony/RosLearningRecord/main/demo_video/mycar.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
