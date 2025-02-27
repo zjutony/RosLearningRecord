@@ -9,8 +9,8 @@ Below are some videos showing the robot, simulation environment, and navigation:
   Your browser does not support the video tag.
 </video>
 “`
-[![ROBOt]](https://raw.githubusercontent.com/zjutony/RosLearningRecord/main/demo_video/mycar.mp4)
+https://github.com/user-attachments/assets/4f665bca-6057-4d96-b928-da782a9b7255
 “`
 
-https://github.com/user-attachments/assets/4f665bca-6057-4d96-b928-da782a9b7255
+
 
